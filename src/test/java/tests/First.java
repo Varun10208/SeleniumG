@@ -13,8 +13,8 @@ WebDriver driver;
 @Test
 public void test1() {
 	driver.get("https://www.google.com");
-    String actual1=driver.getTitle();
-    Assert.assertEquals("Google", actual1);
+    String actual=driver.getTitle();
+    Assert.assertEquals("Google", actual);
 }
 	@BeforeTest
 	public void setup() throws MalformedURLException {
